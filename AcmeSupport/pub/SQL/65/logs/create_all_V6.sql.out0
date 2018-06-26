@@ -1,0 +1,18 @@
+
+SQL*Plus: Release 10.2.0.1.0 - Production on Fri Apr 13 19:03:03 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 10g Express Edition Release 10.2.0.1.0 - Production
+
+SQL> SP2-0310: unable to open file "C:\65\course_sql\Exercises.sql"
+SQL> SP2-0310: unable to open file "C:\65\course_sql\CreateOrders.sql"
+SQL> SP2-0310: unable to open file "C:\65\course_sql\CreateOrderDetails.sql"
+SQL> SP2-0310: unable to open file "C:\65\course_sql\CreateProductCatalog.sql"
+SQL> SP2-0310: unable to open file "C:\65\course_sql\InsertProducts.sql"
+SQL> SP2-0310: unable to open file "C:\65\course_sql\bookorder.sql"
+SQL> SP2-0310: unable to open file "C:\65\course_sql\Customer.sql"
+SQL> SP2-0310: unable to open file "C:\65\course_sql\ordercanonical.sql"
+SQL> Disconnected from Oracle Database 10g Express Edition Release 10.2.0.1.0 - Production

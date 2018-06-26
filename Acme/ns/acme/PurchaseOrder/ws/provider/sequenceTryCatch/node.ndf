@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">webServiceDescriptor</value>
+  <value name="node_nsName">acme.PurchaseOrder.ws.provider:sequenceTryCatch</value>
+  <value name="node_pkg">Acme</value>
+  <value name="inbound">true</value>
+  <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+  <value name="targetNamespace">http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider</value>
+  <value name="definitionName">sequenceTryCatch</value>
+  <number name="mtomThreshold" type="Integer">0</number>
+  <value name="WSDLURL">http://TrainHost.webmethods.com:5555/ws/acme.PurchaseOrder.ws.provider:sequenceTryCatch?WSDL</value>
+  <array name="binderList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="binderName">acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder</value>
+      <value name="portAlias">default</value>
+      <value name="bindingName">acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder</value>
+      <value name="bindingStyle">rpc</value>
+      <value name="bindingTransport">http://schemas.xmlsoap.org/soap/http</value>
+      <value name="transportType">http</value>
+      <value name="bindingUse">encoded</value>
+      <value name="bindingType">SOAP</value>
+      <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+      <value name="portName">acme.PurchaseOrder.ws.provider_sequenceTryCatch_Port</value>
+      <value name="portTypeName">acme.PurchaseOrder.ws.provider_sequenceTryCatch_PortType</value>
+      <value name="SOAPDirective">ws</value>
+      <record name="operationMap" javaclass="com.wm.util.Values">
+        <value name="acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder_sequenceTryCatch">sequenceTryCatch</value>
+      </record>
+    </record>
+  </array>
+  <array name="operationList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">sequenceTryCatch</value>
+      <value name="serviceName">acme.PurchaseOrder.work:sequenceTryCatch</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">sequenceTryCatch</value>
+          <value name="nsOwner">acme.PurchaseOrder.work:sequenceTryCatch</value>
+          <number name="nsOwnerType" type="Integer">1</number>
+          <Boolean name="addedByClient">false</Boolean>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">sequenceTryCatchResponse</value>
+          <value name="nsOwner">acme.PurchaseOrder.work:sequenceTryCatch</value>
+          <number name="nsOwnerType" type="Integer">2</number>
+          <Boolean name="addedByClient">false</Boolean>
+        </record>
+        <array name="faults" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="name">Error</value>
+            <value name="docType">acme.PurchaseOrder.docs:Error</value>
+            <value name="nsOwner">acme.PurchaseOrder.docs:Error</value>
+            <number name="nsOwnerType" type="Integer">3</number>
+            <Boolean name="addedByClient">false</Boolean>
+          </record>
+        </array>
+      </record>
+    </record>
+  </array>
+  <record name="namespaces" javaclass="com.wm.util.Values">
+    <value name="mime">http://schemas.xmlsoap.org/wsdl/mime/</value>
+    <value name="soapenc">http://schemas.xmlsoap.org/soap/encoding/</value>
+    <value name="wsdl">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="soap12">http://schemas.xmlsoap.org/wsdl/soap12/</value>
+    <value name="http">http://schemas.xmlsoap.org/wsdl/http/</value>
+    <value name="xsd">http://www.w3.org/2001/XMLSchema</value>
+    <value name="tns">http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider</value>
+    <value name="soap">http://schemas.xmlsoap.org/wsdl/soap/</value>
+  </record>
+  <array name="handlerList" type="record" depth="1">
+  </array>
+</Values>

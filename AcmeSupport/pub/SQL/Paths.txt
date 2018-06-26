@@ -1,0 +1,7 @@
+PATH
+
+C:\webMethods7\jvm\win150\bin;
+
+CLASSPATH
+
+.;C:\webMethods7\IntegrationServer\lib\client.jar;C:\webMethods7\IntegrationServer\lib\server.jar;

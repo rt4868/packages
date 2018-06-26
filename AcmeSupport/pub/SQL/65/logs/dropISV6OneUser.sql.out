@@ -1,0 +1,16 @@
+
+SQL*Plus: Release 10.2.0.1.0 - Production on Fri Apr 13 19:20:46 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 10g Express Edition Release 10.2.0.1.0 - Production
+
+SQL> drop user ISV6 cascade
+*
+ERROR at line 1:
+ORA-01940: cannot drop a user that is currently connected
+
+
+SQL> Disconnected from Oracle Database 10g Express Edition Release 10.2.0.1.0 - Production

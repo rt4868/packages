@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+
+  <!-- nodes -->
+
+<SEQUENCE EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="STANDALONE">
+  <COMMENT>WebService Descriptor and Operation</COMMENT>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/wsdName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">acme.PurchaseOrder.ws.consumer:sequenceTryCatch2</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/wsdOperationName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">sequenceTryCatch</value>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<BRANCH SWITCH="/_port">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP NAME="acme.PurchaseOrder.ws.provider_sequenceTryCatch_Port" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/address;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">http://TrainHost.webmethods.com:5555/ws/acme.PurchaseOrder.ws.provider:sequenceTryCatch</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/binding;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder</value>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP NAME="$default" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/address;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">http://TrainHost.webmethods.com:5555/ws/acme.PurchaseOrder.ws.provider:sequenceTryCatch</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/binding;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder</value>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+</BRANCH>
+
+<BRANCH SWITCH="/_url">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP NAME="$null" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+</MAP>
+
+<MAP NAME="$default" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/_url;1;0" TO="/address;1;0">
+</MAPCOPY>
+
+<MAPDELETE NAME="Dropper" FIELD="/_url;1;0">
+</MAPDELETE>
+</MAP>
+</BRANCH>
+
+<BRANCH SWITCH="/binding">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="STANDALONE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/fileName;1;0" TO="/request;2;0/fileName;1;0">
+</MAPCOPY>
+
+<MAPDELETE NAME="Dropper" FIELD="/binding;1;0">
+</MAPDELETE>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/wsdBinderName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/soapProtocol;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">SOAP 1.1 Protocol</value>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<INVOKE SERVICE="pub.client:soapClient">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/method;2;0/namespaceName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/method;2;0/localName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">sequenceTryCatch</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/targetInputSignature;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">acme.PurchaseOrder.ws.consumer.sequenceTryCatch2_.docTypes:sequenceTryCatch</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/targetOutputSignature;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">acme.PurchaseOrder.ws.consumer.sequenceTryCatch2_.docTypes:sequenceTryCatchResponse</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/soapAction;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder_sequenceTryCatch</value>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPDELETE NAME="Dropper" FIELD="/targetInputSignature;1;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/targetOutputSignature;1;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/request;2;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/soapAction;1;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+
+<BRANCH SWITCH="/soapStatus">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="0" EXIT-ON="FAILURE">
+  <COMMENT>The server successfully returned the results.</COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="STANDALONE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/response;2;0/result;1;0" TO="/result;1;0">
+</MAPCOPY>
+
+<MAPDELETE NAME="Dropper" FIELD="/soapBody;2;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/address;1;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/header;2;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/soapData;3;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/SOAP-FAULT;2;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/soapAction;1;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/auth;2;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/sequenceTryCatchResponse;2;0/auth;2;0">
+</MAPDELETE>
+</MAP>
+</SEQUENCE>
+
+<SEQUENCE NAME="$default" EXIT-ON="FAILURE">
+  <COMMENT>The server returned a SOAP fault.</COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE SERVICE="pub.soap.utils:getBodyEntries">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/soapResponseData;3;0" TO="/soapData;3;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPDELETE NAME="Dropper" FIELD="/address;1;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/soapData;3;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+
+<INVOKE SERVICE="pub.xml:xmlNodeToDocument">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/bodyEntries[0];3;1" TO="/node;3;0">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/nsDecls;2;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="tns">http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider</value>
+    <value name="SOAP-ENV">http://schemas.xmlsoap.org/soap/envelope/</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/document;2;0" TO="/SOAP-FAULT;2;0/Fault_1_1;2;0">
+</MAPCOPY>
+
+<MAPDELETE NAME="Dropper" FIELD="/node;3;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/body;3;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/document;2;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/bodyEntries;3;1">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/nsDecls;2;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+
+<MAP MODE="STANDALONE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/SOAP-FAULT;2;0/soapProtocol;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">SOAP 1.1 Protocol</value>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPDELETE NAME="Dropper" FIELD="/soapBody;2;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/address;1;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/header;2;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/soapData;3;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/soapAction;1;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/auth;2;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/;2;0/auth;2;0">
+</MAPDELETE>
+</MAP>
+</SEQUENCE>
+</BRANCH>
+</SEQUENCE>
+</BRANCH>
+
+<MAPDELETE NAME="Dropper" FIELD="/wsdName;1;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/wsdOperationName;1;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/wsdBinderName;1;0">
+</MAPDELETE>
+</SEQUENCE>
+</FLOW>
