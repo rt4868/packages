@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">lengthString</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUgLWluCgpJRGF0YUN1cnNvciBwaXBlbGluZUN1cnNvciA9cGlwZWxpbmUuZ2V0
+Q3Vyc29yKCk7CgpTdHJpbmcgaW5wdXQgPUlEYXRhVXRpbC5nZXRTdHJpbmcocGlwZWxpbmVDdXJz
+b3IsImlucHV0Iik7CmludCB0ZW1wOwoKU3RyaW5nIHRlbXAyPSIiOwp0cnkgewoKdGVtcCA9aW5w
+dXQubGVuZ3RoKCk7CiB0ZW1wMiA9SW50ZWdlci50b1N0cmluZyh0ZW1wKTsKfWNhdGNoIChFeGNl
+cHRpb24gZSl7CmUucHJpbnRTdGFja1RyYWNlKCk7Cn0KCgoKLy9waXBlbGluZS1vdXQKCklEYXRh
+Q3Vyc29yIHBpcGVsaW5lQ3Vyc29yMiA9cGlwZWxpbmUuZ2V0Q3Vyc29yKCkgOwoKSURhdGFVdGls
+LnB1dChwaXBlbGluZUN1cnNvcjIsInJlcyIsdGVtcDIpOwoKCgoKIAoKCgoKCgo=</value>
+</Values>

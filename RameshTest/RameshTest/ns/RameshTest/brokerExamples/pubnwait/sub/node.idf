@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="shared">cHJvdGVjdGVkIHN0YXRpYyBzeW5jaHJvbml6ZWQgdm9pZCB3cml0ZVN0cmluZyhTdHJpbmcgZmls
+ZW5hbWUsIFN0cmluZyBtZXNzYWdlKSB0aHJvd3MgU2VydmljZUV4Y2VwdGlvbiB7Ci8qCgl0cnl7
+CgkJUmFuZG9tQWNjZXNzRmlsZSByZj1uZXcgUmFuZG9tQWNjZXNzRmlsZShmaWxlbmFtZSwicnci
+KTsKCQlyZi5zZWVrKHJmLmxlbmd0aCgpKTsKCQlyZi53cml0ZUJ5dGVzKG1lc3NhZ2UpOwoJCXJm
+LndyaXRlQnl0ZXMoIlxuIik7CgkJcmYuY2xvc2UoKTsKCX1jYXRjaChFeGNlcHRpb24gZSl7CgkJ
+dGhyb3cgbmV3IFNlcnZpY2VFeGNlcHRpb24oZSk7Cgl9CiovCgl3cml0ZURhdGEoZmlsZW5hbWUs
+IG51bGwsIG1lc3NhZ2UpOwp9CnByb3RlY3RlZCBzdGF0aWMgc3luY2hyb25pemVkIHZvaWQgd3Jp
+dGVCeXRlcyhTdHJpbmcgZmlsZW5hbWUsIGJ5dGVbXSBtZXNzYWdlSW5CeXRlcykgdGhyb3dzIFNl
+cnZpY2VFeGNlcHRpb24gewovKgoJdHJ5ewoJCVJhbmRvbUFjY2Vzc0ZpbGUgcmY9bmV3IFJhbmRv
+bUFjY2Vzc0ZpbGUoZmlsZW5hbWUsInJ3Iik7CgkJcmYuc2VlayhyZi5sZW5ndGgoKSk7CgkJcmYu
+d3JpdGUobWVzc2FnZUluQnl0ZXMpOwoJCXJmLndyaXRlQnl0ZXMoIlxuIik7CgkJcmYuY2xvc2Uo
+KTsKCX1jYXRjaChFeGNlcHRpb24gZSl7CgkJdGhyb3cgbmV3IFNlcnZpY2VFeGNlcHRpb24oZSk7
+Cgl9CiovCgl3cml0ZURhdGEoZmlsZW5hbWUsIG1lc3NhZ2VJbkJ5dGVzLCBudWxsKTsKCQp9Cgpw
+cm90ZWN0ZWQgc3RhdGljIHN5bmNocm9uaXplZCB2b2lkIHdyaXRlRGF0YSgKCQkJCQkJU3RyaW5n
+IGZpbGVuYW1lLCAKCQkJCQkJYnl0ZVtdIG1lc3NhZ2VJbkJ5dGVzLAoJCQkJCQlTdHJpbmcgbWVz
+c2FnZSkgCgl0aHJvd3MgU2VydmljZUV4Y2VwdGlvbiAKewoJLy8gYWJvcnQKCWlmIChtZXNzYWdl
+ID09IG51bGwgJiYgbWVzc2FnZUluQnl0ZXMgPT0gbnVsbCkgcmV0dXJuOwoKCXRyeQoJewoJCVJh
+bmRvbUFjY2Vzc0ZpbGUgcmY9bmV3IFJhbmRvbUFjY2Vzc0ZpbGUoZmlsZW5hbWUsInJ3Iik7CgkJ
+cmYuc2VlayhyZi5sZW5ndGgoKSk7CgkJaWYgKG1lc3NhZ2UgIT0gbnVsbCkgCgkJewoJCQlyZi53
+cml0ZUJ5dGVzKG1lc3NhZ2UpOwoJCX0KCQlpZihtZXNzYWdlSW5CeXRlcyAhPSBudWxsKQoJCXsK
+CQkJcmYud3JpdGUobWVzc2FnZUluQnl0ZXMpOwoJCX0KCQlyZi53cml0ZUJ5dGVzKCJcbiIpOwoJ
+CXJmLmNsb3NlKCk7Cgl9CgljYXRjaChFeGNlcHRpb24gZSkKCXsKCQl0aHJvdyBuZXcgU2Vydmlj
+ZUV4Y2VwdGlvbihlKTsKCX0KfQ==</value>
+  <value name="encodeutf8">true</value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+  <array name="imports" type="value" depth="1">
+    <value>java.io.*</value>
+    <value>java.lang.*</value>
+    <value>java.util.*</value>
+    <value>com.wm.util.*</value>
+  </array>
+</Values>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">concat</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUtSU4KCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID1waXBlbGluZS5nZXRD
+dXJzb3IoKTsKClN0cmluZyB2YWx1ZTEgPUlEYXRhVXRpbC5nZXRTdHJpbmcocGlwZWxpbmVDdXJz
+b3IsInZhbHVlMSIpOwpTdHJpbmcgdmFsdWUyID1JRGF0YVV0aWwuZ2V0U3RyaW5nKHBpcGVsaW5l
+Q3Vyc29yLCJ2YWx1ZTIiKTsKCnBpcGVsaW5lQ3Vyc29yLmRlc3Ryb3koKTsKU3RyaW5nIHRlbXA9
+IiI7CnRyeSB7Cgp0ZW1wID12YWx1ZTEuY29uY2F0KHZhbHVlMik7Cn1jYXRjaCAoRXhjZXB0aW9u
+IGUpIHsKZS5wcmludFN0YWNrVHJhY2UoKSA7Cn0KSURhdGFDdXJzb3IgcGlwZWxpbmVDdXJzb3Iy
+ID1waXBlbGluZS5nZXRDdXJzb3IoKTsKCklEYXRhVXRpbC5wdXQocGlwZWxpbmVDdXJzb3IyICwi
+cmVzIiAsdGVtcCk7CgoK</value>
+</Values>

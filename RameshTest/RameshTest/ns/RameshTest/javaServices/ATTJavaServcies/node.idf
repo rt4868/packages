@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">interface</value>
+  <value name="node_nsName">RameshTest.javaServices.ATTJavaServcies</value>
+  <value name="encodeutf8">true</value>
+  <value name="shared">cHJpdmF0ZSBzdGF0aWMgaW50IHBDb3VudCA9MDsKc3RhdGljIHB1YmxpYyBpbnQgZ2VuZXJhdGVS
+YW5kb21OdW1iZXJGcm9tUmFuZ2UoUmFuZG9tIHIsIGludCByYW5nZSkKCXsKCQlyZXR1cm4gKGlu
+dCkoci5uZXh0RG91YmxlKCkqKHJhbmdlLTEuMGUtMykpOwoJfQoJc3RhdGljIHB1YmxpYyBjaGFy
+IGdlbmVyYXRlUmFuZG9tQ2hhckZyb21SYW5nZShSYW5kb20gciwgY2hhciBzdGFydCwgY2hhciBl
+bmQpCgl7CgkJcmV0dXJuIChjaGFyKShzdGFydCtnZW5lcmF0ZVJhbmRvbU51bWJlckZyb21SYW5n
+ZShyLGVuZC1zdGFydCsxKSk7Cgl9Cg==</value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+  <array name="imports" type="value" depth="1">
+    <value>java.io.*</value>
+    <value>java.text.*</value>
+    <value>java.util.*</value>
+    <value>java.lang.*</value>
+    <value>java.util.Random</value>
+    <value>com.wm.app.b2b.server.*</value>
+  </array>
+</Values>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">webServiceDescriptor</value>
+  <value name="node_nsName">acme.PurchaseOrder.ws.consumer:sequenceTryCatch2</value>
+  <value name="node_pkg">Acme</value>
+  <Boolean name="inbound">false</Boolean>
+  <Boolean name="WSICompliant">false</Boolean>
+  <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+  <value name="targetNamespace">http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider</value>
+  <Boolean name="attachmentEnabled">false</Boolean>
+  <number name="mtomThreshold" type="Integer">0</number>
+  <value name="WSDLURL">http://TrainHost.webmethods.com:5555/ws/acme.PurchaseOrder.ws.consumer:sequenceTryCatch2?WSDL</value>
+  <value name="externalWSDL">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsdl:definitions name="sequenceTryCatch" targetNamespace="http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider" xmlns:tns="http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"&gt;
+  &lt;wsdl:types&gt;
+    &lt;xsd:schema targetNamespace="http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider"&gt;
+          &lt;xsd:complexType name="sequenceTryCatch"&gt;
+            &lt;xsd:sequence&gt;
+              &lt;xsd:element name="fileName" nillable="true" type="xsd:string"/&gt;
+            &lt;/xsd:sequence&gt;
+          &lt;/xsd:complexType&gt;
+          &lt;xsd:complexType name="sequenceTryCatchResponse"&gt;
+            &lt;xsd:sequence&gt;
+              &lt;xsd:element name="result" nillable="true" type="xsd:string"/&gt;
+            &lt;/xsd:sequence&gt;
+          &lt;/xsd:complexType&gt;
+          &lt;xsd:complexType name="Error"&gt;
+            &lt;xsd:sequence&gt;
+              &lt;xsd:element name="Reason" nillable="true" type="xsd:string"/&gt;
+            &lt;/xsd:sequence&gt;
+          &lt;/xsd:complexType&gt;
+        			&lt;xsd:element name="sequenceTryCatch" type="tns:sequenceTryCatch"/&gt;
+			&lt;xsd:element name="sequenceTryCatchResponse" type="tns:sequenceTryCatchResponse"/&gt;
+			&lt;xsd:element name="Error" type="tns:Error"/&gt;
+	&lt;/xsd:schema&gt;
+  &lt;/wsdl:types&gt;
+  &lt;wsdl:message name="sequenceTryCatchResponse"&gt;
+    &lt;wsdl:part name="result" type="xsd:string"&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name="sequenceTryCatch"&gt;
+    &lt;wsdl:part name="fileName" type="xsd:string"&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name="Error"&gt;
+    &lt;wsdl:part name="parameters" element="tns:Error"&gt;
+    &lt;/wsdl:part&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:portType name="acme.PurchaseOrder.ws.provider_sequenceTryCatch_PortType"&gt;
+    &lt;wsdl:operation name="sequenceTryCatch"&gt;
+      &lt;wsdl:input message="tns:sequenceTryCatch"&gt;
+    &lt;/wsdl:input&gt;
+      &lt;wsdl:output message="tns:sequenceTryCatchResponse"&gt;
+    &lt;/wsdl:output&gt;
+      &lt;wsdl:fault name="Error" message="tns:Error"&gt;
+    &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:portType&gt;
+  &lt;wsdl:binding name="acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder" type="tns:acme.PurchaseOrder.ws.provider_sequenceTryCatch_PortType"&gt;
+    &lt;soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/&gt;
+    &lt;wsdl:operation name="sequenceTryCatch"&gt;
+      &lt;soap:operation soapAction="acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder_sequenceTryCatch" style="rpc"/&gt;
+      &lt;wsdl:input&gt;
+        &lt;soap:body parts="fileName" use="encoded" namespace="http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider"/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;soap:body parts="result" use="encoded" namespace="http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider"/&gt;
+      &lt;/wsdl:output&gt;
+      &lt;wsdl:fault name="Error"&gt;
+        &lt;soap:fault name="Error" use="encoded" namespace="http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider"/&gt;
+      &lt;/wsdl:fault&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:binding&gt;
+  &lt;wsdl:service name="sequenceTryCatch"&gt;
+    &lt;wsdl:port name="acme.PurchaseOrder.ws.provider_sequenceTryCatch_Port" binding="tns:acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder"&gt;
+      &lt;soap:address location="http://TrainHost.webmethods.com:5555/ws/acme.PurchaseOrder.ws.provider:sequenceTryCatch"/&gt;
+    &lt;/wsdl:port&gt;
+  &lt;/wsdl:service&gt;
+&lt;/wsdl:definitions&gt;
+</value>
+  <value name="externalWSDLURL">http://TrainHost.webmethods.com:5555/ws/acme.PurchaseOrder.ws.provider:sequenceTryCatch?WSDL</value>
+  <value name="definitionName">sequenceTryCatch</value>
+  <array name="handlerList" type="record" depth="1">
+  </array>
+  <array name="binderList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="binderName">acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder</value>
+      <value name="portAddress">http://TrainHost.webmethods.com:5555/ws/acme.PurchaseOrder.ws.provider:sequenceTryCatch</value>
+      <value name="bindingName">acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder</value>
+      <value name="bindingStyle">rpc</value>
+      <value name="bindingUse">encoded</value>
+      <value name="bindingType">SOAP</value>
+      <value name="portName">acme.PurchaseOrder.ws.provider_sequenceTryCatch_Port</value>
+      <value name="portTypeName">acme.PurchaseOrder.ws.provider_sequenceTryCatch_PortType</value>
+      <value name="bindingTransport">http://schemas.xmlsoap.org/soap/http</value>
+      <value name="transportType">http</value>
+      <record name="operationMap" javaclass="com.wm.util.Values">
+        <value name="acme.PurchaseOrder.ws.provider_sequenceTryCatch_Binder_sequenceTryCatch">sequenceTryCatch</value>
+      </record>
+      <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+      <value name="SOAPDirective">ws</value>
+    </record>
+  </array>
+  <array name="operationList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">sequenceTryCatch</value>
+      <value name="serviceName">acme.PurchaseOrder.ws.consumer.sequenceTryCatch2_.connectors:sequenceTryCatch</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider:sequenceTryCatch</value>
+          <value name="docType">acme.PurchaseOrder.ws.consumer.sequenceTryCatch2_.docTypes:sequenceTryCatch</value>
+          <value name="nsOwner">acme.PurchaseOrder.ws.consumer.sequenceTryCatch2_.docTypes:sequenceTryCatch</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider:sequenceTryCatchResponse</value>
+          <value name="docType">acme.PurchaseOrder.ws.consumer.sequenceTryCatch2_.docTypes:sequenceTryCatchResponse</value>
+          <value name="nsOwner">acme.PurchaseOrder.ws.consumer.sequenceTryCatch2_.docTypes:sequenceTryCatchResponse</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+        </record>
+        <array name="faults" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="name">Error</value>
+            <value name="docType">acme.PurchaseOrder.ws.consumer.sequenceTryCatch2_.docTypes:Error</value>
+            <value name="nsOwner">acme.PurchaseOrder.ws.consumer.sequenceTryCatch2_.docTypes:Error</value>
+            <number name="nsOwnerType" type="Integer">3</number>
+            <Boolean name="addedByClient">false</Boolean>
+          </record>
+        </array>
+      </record>
+    </record>
+  </array>
+  <record name="namespaces" javaclass="com.wm.util.Values">
+    <value name="tns">http://TrainHost.webmethods.com/acme.PurchaseOrder.ws.provider</value>
+    <value name="mime">http://schemas.xmlsoap.org/wsdl/mime/</value>
+    <value name="soap12">http://schemas.xmlsoap.org/wsdl/soap12/</value>
+    <value name="http">http://schemas.xmlsoap.org/wsdl/http/</value>
+    <value name="soapenc">http://schemas.xmlsoap.org/soap/encoding/</value>
+    <value name="xsd">http://www.w3.org/2001/XMLSchema</value>
+    <value name="soap">http://schemas.xmlsoap.org/wsdl/soap/</value>
+    <value name="wsdl">http://schemas.xmlsoap.org/wsdl/</value>
+  </record>
+</Values>

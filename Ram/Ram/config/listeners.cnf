@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="listeners" javaclass="com.wm.util.Values">
+    <record name="FilePollingListener:C:\flatfile\monitor" javaclass="com.wm.util.Values">
+      <value name="port">C:\flatfile\monitor</value>
+      <value name="protocol">FilePolling</value>
+      <value name="pkg">Ram</value>
+      <value name="enabled">true</value>
+      <value name="key">FilePollingListener:C:\flatfile\monitor</value>
+      <value name="factoryKey">webMethods/FilePolling</value>
+      <value name="configURL">/WmFlatFile/configFilePolling.dsp</value>
+      <value name="provider">webMethods</value>
+      <value name="monitorDir">C:\flatfile\monitor</value>
+      <value name="workDir">c:\flatfile\work</value>
+      <value name="completionDir">c:\flatfile\done</value>
+      <value name="errorDir">c:\flatfile\error</value>
+      <value name="recursive">no</value>
+      <value name="runUser">Administrator</value>
+      <value name="processingService">FlatFile:flatfile</value>
+      <value name="filePollingInterval">20</value>
+      <value name="cleanUpFileAge">7</value>
+      <value name="cleanUpInterval">24</value>
+      <value name="maxThreads">1</value>
+    </record>
+  </record>
+</Values>
